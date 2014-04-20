@@ -1,0 +1,9 @@
+{
+  "name": "style-guide",
+  "dependencies": {
+    "bower-bourbon": "~3.1.8",
+    "color-scale": "*",
+    "type-rhythm-scale": "*",
+    "rwd-toolkit": "*"
+  }
+}
