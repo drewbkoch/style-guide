@@ -6,7 +6,8 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
 router.get('/style-guide', function(req, res) {
-  res.render('style-guide', { title: 'Style Guide' });
+  res.render('style-guide', { title: 'Style Guide', scripts: ['javascript/style-guide.js'] });
 });
+
 
 module.exports = router;
