@@ -1,0 +1,28 @@
+$expand-transition: all 0.5s;
+
+
+// To expand the Jade and Sass links to show the blocks of code
+.expanding {
+    display:block;
+}
+
+.expand-jade-code, .expand-sass-code {
+   cursor:pointer;
+}
+
+.jade-code, .sass-code{
+   overflow:hidden;
+   max-height: 50px;
+   position:relative;
+   -webkit-transition: $expand-transition;
+   -moz-transition: $expand-transition;
+   transition: $expand-transition;
+}
+
+
+.open {
+   -webkit-transition: $expand-transition;
+   -moz-transition: $expand-transition;
+   transition: $expand-transition;
+   max-height:700px;
+}
