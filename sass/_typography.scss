@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
+@import url(http://fonts.googleapis.com/css?family=Kreon:400,700);
+
+$code-font: "PT Mono";
+$header-font: "Josephine";
+$header-font-weight: 700;
+$subhead-font: "Raleway";
+$subhead-font-weight: 500;
+$p-font: "Roboto Slab";
+$p-font-weight: 300;
+
+
+
+
+code{
+   font-family: $code-font;
+}
+
+h1{
+   font-family: $header-font;
+   font-weight: $header-font-weight;
+}
