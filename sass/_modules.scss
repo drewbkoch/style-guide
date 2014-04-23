@@ -44,9 +44,9 @@ ul.swatches{
 // }
 
 
-// .red-swatch, .red-swatch > code{
-//    background-color: $colors-red;
-// }
+.red-swatch > code{
+   background-color: $colors-red;
+}
 .orange-swatch{
    background-color: $colors-orange;
 }
