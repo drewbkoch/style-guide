@@ -45,7 +45,6 @@ $icons: (icon-mail '/e600') (icon-googleplus '/e601') (icon-facebook '/e602') (i
 @each $icon in $icons {
   .#{nth($icon, 1)}:after {
     content: nth($icon, 1);
-    // @extend %ico-font-base;
   }
 }
 
