@@ -1,0 +1,14 @@
+nav{
+   @include span-columns(2.5);
+   position: fixed;
+}
+nav a{
+   display: block;
+}
+
+main{
+   @include span-columns(9.5);
+   @include shift(2.5);
+}
+
+

@@ -1,0 +1,65 @@
+$expand-transition: all 0.5s;
+
+
+// To expand the Jade and Sass links to show the blocks of code
+.expanding {
+    display:block;
+}
+
+.expand-jade-code, .expand-sass-code {
+   cursor:pointer;
+}
+
+.jade-code, .sass-code{
+   overflow:hidden;
+   max-height: 50px;
+   position:relative;
+   -webkit-transition: $expand-transition;
+   -moz-transition: $expand-transition;
+   transition: $expand-transition;
+}
+
+
+.open {
+   -webkit-transition: $expand-transition;
+   -moz-transition: $expand-transition;
+   transition: $expand-transition;
+   max-height:700px;
+}
+
+$colors-red: #F1432A;
+$colors-orange: #F4B864;
+$colors-yellow: #F2E94E;
+$colors-green: #06BC5A;
+$colors-teal: #3EBFB9;
+
+ul.swatches{
+   list-style: none;
+}
+
+// code{
+//    background-color: #EDE3C9;
+//    border: 1px solid #FFC893;
+//    border-radius: 3px;
+// }
+
+
+.red-swatch > code{
+   background-color: $colors-red;
+}
+.orange-swatch{
+   background-color: $colors-orange;
+}
+.yellow-swatch{
+   background-color: $colors-yellow;
+}
+.green-swatch{
+   background-color: $colors-green;
+}
+.teal-swatch{
+   background-color: $colors-teal;
+}
+
+.swatches > code{
+   display: block;
+}

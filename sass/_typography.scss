@@ -1,0 +1,71 @@
+
+$code-font: "PT Mono";
+$header-font: "Raleway";
+$header-font-weight: 700;
+$header-font-size: 3em;
+$subhead-font: "Roboto Slab";
+$subhead-font-weight: 700;
+$p-font: "Roboto Slab";
+$p-font-weight: 300;
+$a-font-weight: 500;
+
+
+
+
+code{
+   font-family: $code-font;
+}
+
+h1{
+   font-family: $header-font;
+   font-weight: $header-font-weight;
+   font-size: $header-font-size;
+}
+h2{
+   font-family: $subhead-font;
+   font-weight: $subhead-font-weight;
+}
+p{
+   font-family: $p-font;
+   font-weight: $p-font-weight;
+}
+a{
+   font-family: $p-font;
+   font-weight: $a-font-weight;
+   text-decoration: none;
+   color: $colors-teal;
+}
+h3, h4, h5, h6{
+   font-family: $header-font;
+   font-weight: $subhead-font-weight;
+}
+
+@font-face {
+   font-family: 'icomoon';
+   src:url('fonts/icomoon.eot?829n0l');
+   src:url('fonts/icomoon.eot?#iefix829n0l') format('embedded-opentype'),
+      url('fonts/icomoon.woff?829n0l') format('woff'),
+      url('fonts/icomoon.ttf?829n0l') format('truetype'),
+      url('fonts/icomoon.svg?829n0l#icomoon') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+%ico-font-base {
+    font-family: 'ico-fonts';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+$icons: (icon-mail '/e600') (icon-googleplus '/e601') (icon-facebook '/e602') (icon-twitter '/e603') (icon-feed '/e604') (icon-vimeo '/e605') (icon-flickr '/e606') (icon-dribbble '/e607') (icon-github '/e608');
+
+@each $icon in $icons {
+  .#{nth($icon, 1)}:after {
+    content: nth($icon, 2);
+    @extend %ico-font-base;
+  }
+}
