@@ -1,3 +1,4 @@
+@import "mixins";
 $expand-transition: all 0.5s;
 
 
@@ -49,58 +50,37 @@ $light-gray: #B2B2B3;
 $dark-gray: #727273;
 
 .magenta-swatch{
-   padding:1em;
-   padding-bottom: 1em;
-   height: 4em;
-   width: 7em;
+   @include color-swatch;
    background-color: $magenta;
    color: $light-gray;
 }
 .salmon-swatch{
-   padding:1em;
-   padding-bottom: 1em;
-   height: 4em;
-   width: 7em;
+   @include color-swatch;
    background-color: $salmon;
    color: $light-gray;
 }
 .orange-swatch{
-   padding:1em;
-   padding-bottom: 1em;
-   height: 4em;
-   width: 7em;
+   @include color-swatch;
    background-color: $orange;
    color: $dark-gray;
 }
 .yellow-swatch{
-   padding:1em;
-   padding-bottom: 1em;
-   height: 4em;
-   width: 7em;
+   @include color-swatch;
    background-color: $yellow;
    color: $dark-gray;
 }
 .green-swatch{
-   padding:1em;
-   padding-bottom: 1em;
-   height: 4em;
-   width: 7em;
+   @include color-swatch;
    background-color: $green;
    color: $dark-gray;
 }
 .teal-swatch{
-   padding:1em;
-   padding-bottom: 1em;
-   height: 4em;
-   width: 7em;
+   @include color-swatch;
    background-color: $teal;
    color: $light-gray;
 }
 .navy-swatch{
-   padding:1em;
-   padding-bottom: 1em;
-   height: 4em;
-   width: 7em;
+   @include color-swatch;
    background-color: $navy;
    color: $light-gray;
 }
