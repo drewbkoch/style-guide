@@ -27,11 +27,13 @@ $expand-transition: all 0.5s;
    max-height:700px;
 }
 
-$colors-red: #F1432A;
-$colors-orange: #F4B864;
-$colors-yellow: #F2E94E;
-$colors-green: #06BC5A;
-$colors-teal: #3EBFB9;
+$magenta: #A61F5C;
+$salmon: #D6493B;
+$orange: #DB943A;
+$yellow: #F2E94E;
+$green: #06BC5A;
+$teal: #1A7172;
+$navy: #1F2058;
 
 ul.swatches{
    list-style: none;
@@ -43,23 +45,67 @@ ul.swatches{
 //    border-radius: 3px;
 // }
 
+$light-gray: #B2B2B3;
+$dark-gray: #727273;
 
-.red-swatch > code{
-   background-color: $colors-red;
+.magenta-swatch{
+   padding:1em;
+   padding-bottom: 1em;
+   height: 4em;
+   width: 7em;
+   background-color: $magenta;
+   color: $light-gray;
+}
+.salmon-swatch{
+   padding:1em;
+   padding-bottom: 1em;
+   height: 4em;
+   width: 7em;
+   background-color: $salmon;
+   color: $light-gray;
 }
 .orange-swatch{
-   background-color: $colors-orange;
+   padding:1em;
+   padding-bottom: 1em;
+   height: 4em;
+   width: 7em;
+   background-color: $orange;
+   color: $dark-gray;
 }
 .yellow-swatch{
-   background-color: $colors-yellow;
+   padding:1em;
+   padding-bottom: 1em;
+   height: 4em;
+   width: 7em;
+   background-color: $yellow;
+   color: $dark-gray;
 }
 .green-swatch{
-   background-color: $colors-green;
+   padding:1em;
+   padding-bottom: 1em;
+   height: 4em;
+   width: 7em;
+   background-color: $green;
+   color: $dark-gray;
 }
 .teal-swatch{
-   background-color: $colors-teal;
+   padding:1em;
+   padding-bottom: 1em;
+   height: 4em;
+   width: 7em;
+   background-color: $teal;
+   color: $light-gray;
+}
+.navy-swatch{
+   padding:1em;
+   padding-bottom: 1em;
+   height: 4em;
+   width: 7em;
+   background-color: $navy;
+   color: $light-gray;
 }
 
-.swatches > code{
-   display: block;
+li{
+   display: inline-block;
+   margin: .4em;
 }
