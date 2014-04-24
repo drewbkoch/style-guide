@@ -69,3 +69,9 @@ $icons: (icon-mail '/e600') (icon-googleplus '/e601') (icon-facebook '/e602') (i
     @extend %ico-font-base;
   }
 }
+
+button{
+  font-family: $header-font;
+  font-weight: $subhead-font-weight;
+  font-size: 1em;
+}
