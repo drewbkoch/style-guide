@@ -1,0 +1,45 @@
+@import 'buttons/manifest'; //import manifest file from buttons folder
+
+// button styling
+
+button {
+  font-family: $header-font;
+  font-weight: $subhead-font-weight;
+  font-size: 1em;
+}
+
+.default-buttons > button{
+  @include button;
+  background-color: $salmon;
+  color: white;
+}
+
+.default-buttons > button:hover{
+   background-color: darken($salmon, 15%);
+}
+
+.secondary-buttons > button{
+  @include button;
+  background-color: $green;
+  color: black;
+}
+.secondary-buttons > button:hover{
+   background-color: darken($green, 5%);
+}
+
+.dark-buttons > button{
+  @include button;
+  background-color: $navy;
+  color: white;
+}
+.dark-buttons > button:hover{
+   background-color: lighten($navy, 15%);
+}
+
+button.more{
+      width: 8.4em;
+  }
+
+button.like{
+      width: 6em;
+  }

@@ -1,6 +1,20 @@
-@import "mixins";
+@import "style-guide/sg-manifest";
+
 $expand-transition: all 0.5s;
 
+//grid layout
+nav{
+   @include span-columns(2.5);
+   position: fixed;
+}
+nav a{
+   display: block;
+}
+
+main{
+   @include span-columns(9.5);
+   @include shift(2.5);
+}
 
 // To expand the Jade and Sass links to show the blocks of code
 .expanding {
@@ -28,13 +42,7 @@ $expand-transition: all 0.5s;
    max-height:700px;
 }
 
-$magenta: #A61F5C;
-$salmon: #D6493B;
-$orange: #DB943A;
-$yellow: #F2E94E;
-$green: #06BC5A;
-$teal: #1A7172;
-$navy: #1F2058;
+
 
 ul.swatches{
    list-style: none;
@@ -46,8 +54,7 @@ ul.swatches{
 //    border-radius: 3px;
 // }
 
-$light-gray: #B2B2B3;
-$dark-gray: #727273;
+
 
 .magenta-swatch{
    @include color-swatch;
@@ -90,46 +97,9 @@ li{
    margin: .4em;
 }
 
-// button styling
-.default-buttons > button{
-  @include button;
-  background-color: $salmon;
-  color: white;
+.icon-mail, .icon-googleplus, .icon-facebook, .icon-twitter, .icon-feed, .icon-vimeo, .icon-flickr, .icon-dribbble, .icon-github, .icon-pinterest{
+   margin: .4em;
 }
-
-.default-buttons > button:hover{
-   background-color: darken($salmon, 15%);
-}
-
-.secondary-buttons > button{
-  @include button;
-  background-color: $green;
-  color: black;
-}
-.secondary-buttons > button:hover{
-   background-color: darken($green, 5%);
-}
-
-.dark-buttons > button{
-  @include button;
-  background-color: $navy;
-  color: white;
-}
-.dark-buttons > button:hover{
-   background-color: lighten($navy, 15%);
-}
-
-button.more{
-      width: 8.4em;
-  }
-
-button.like{
-      width: 6em;
-  }
-
-
-
-
 
  // background-color: #F46F80;
  //  /* padding: .8em 3.7em; */
