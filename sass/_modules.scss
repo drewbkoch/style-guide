@@ -11,8 +11,13 @@ $expand-transition: all 0.5s;
    cursor:pointer;
 }
 
+.code{
+   background-color: #FBF2E1;
+   overflow: scroll;
+}
+
 .jade-code, .sass-code{
-   overflow:hidden;
+   overflow:scroll;
    max-height: 50px;
    position:relative;
    -webkit-transition: $expand-transition;
