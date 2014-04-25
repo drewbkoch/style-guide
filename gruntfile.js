@@ -3,7 +3,8 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'public/stylesheets/application.css': 'sass/application.scss'
+          'public/stylesheets/application.css': 'sass/application.scss',
+          'public/stylesheets/style-guide.css': 'sass/style-guide.scss'
         },
         options: {
           sourceComments: "map",
