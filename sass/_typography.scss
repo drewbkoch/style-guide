@@ -1,4 +1,3 @@
-
 $code-font: "PT Mono";
 $header-font: "Raleway";
 $header-font-weight: 700;
@@ -8,9 +7,6 @@ $subhead-font-weight: 700;
 $p-font: "Roboto Slab";
 $p-font-weight: 300;
 $a-font-weight: 500;
-
-
-
 
 code{
    font-family: $code-font;
@@ -47,18 +43,3 @@ $icons: (icon-mail '/e600') (icon-googleplus '/e601') (icon-facebook '/e602') (i
     content: nth($icon, 1);
   }
 }
-
-
-
-//icomoon icon fonts
-.icon-mail, .icon-googleplus, .icon-facebook, .icon-twitter, .icon-feed, .icon-vimeo, .icon-flickr, .icon-dribbble, .icon-github, .icon-pinterest{
-   margin: .4em;
-}
-
-
-button{
-  font-family: $header-font;
-  font-weight: $subhead-font-weight;
-  font-size: 1em;
-}
-
