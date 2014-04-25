@@ -43,7 +43,7 @@ h3, h4, h5, h6 {
 $icons: (icon-mail '/e600') (icon-googleplus '/e601') (icon-facebook '/e602') (icon-twitter '/e603') (icon-feed '/e604') (icon-vimeo '/e605') (icon-flickr '/e606') (icon-dribbble '/e607') (icon-github '/e609') (icon-pinterest '/e60a') (icon-twitter '/e603');
 
 @each $icon in $icons {
-  .#{nth($icon, 1)}:after {
+  #{nth($icon, 1)}:after {
     content: nth($icon, 1);
   }
 }
