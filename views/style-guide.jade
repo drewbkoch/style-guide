@@ -47,8 +47,9 @@ block content
         div(class="sass-code")
           h3(class="expand-sass-code") Sass
           p INSERT BLOCK OF CODE HERE
-    article
+    article(class="texture")
       h1(id="textures") Textures
+      p These textures are to be used as background textures for the website.  The Sass code demonstrates using these textures for the background image of the "texture" id.
       img(src="/images/texture1.jpg" alt="texture1")
       section(class="expanding")
         div(class="jade-code")
@@ -60,7 +61,9 @@ block content
           h3(class="expand-sass-code") Sass
           pre
             code(class="language-scss").
-              INSERT SASS HERE
+              #textures{
+                background-image: url(../images/texture1.jpg);
+              }
       img(src="/images/texture2.jpg" alt="texture2")
       section(class="expanding")
         div(class="jade-code")
@@ -72,7 +75,9 @@ block content
           h3(class="expand-sass-code") Sass
           pre
             code(class="language-scss").
-              INSERT SASS HERE
+              #textures{
+                background-image: url(../images/texture2.jpg);
+              }
       img(src="/images/texture3.jpg" alt="texture3")
       section(class="expanding")
         div(class="jade-code")
@@ -84,7 +89,9 @@ block content
           h3(class="expand-sass-code") Sass
           pre
             code(class="language-scss").
-              INSERT SASS HERE
+              #textures{
+                background-image: url(../images/texture3.jpg);
+              }
     article
       h1(id="logos") Logos
       img(src="../public/images/kernelLogo1.jpg" alt="logo")
