@@ -29,7 +29,10 @@ a {
    font-family: $p-font;
    font-weight: $a-font-weight;
    text-decoration: none;
-   color: $teal;
+   color: $green;
+}
+a:hover{
+  color: $orange;
 }
 h3, h4, h5, h6 {
    font-family: $header-font;

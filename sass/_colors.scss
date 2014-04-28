@@ -7,3 +7,18 @@ $teal: #1A7172;
 $navy: #1F2058;
 $light-gray: #B2B2B3;
 $dark-gray: #727273;
+
+h1{
+   color: $magenta;
+}
+
+h2{
+   color: $teal;
+}
+p{
+   color: $navy;
+}
+
+h3, h4, h5, h6{
+   color: $salmon;
+}
