@@ -121,3 +121,15 @@ img {
   width: em(300);
 }
 
+//typography colors
+
+nav a{
+   color: $navy;
+}
+nav a:hover{
+   color: $green;
+}
+
+.expand-sass-code, .expand-jade-code{
+   color: $green;
+}
