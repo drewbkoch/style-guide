@@ -467,13 +467,45 @@ block content
               }
     article
       h1(id="images") Images
+      img(src="images/kern.png" alt="kern")
       section(class="expanding")
         div(class="jade-code")
           h3(class="expand-jade-code") Jade
-          p INSERT BLOCK OF CODE HERE
+          pre
+            code(class="language-scss") img(src="images/kern.png" alt="kern")
         div(class="sass-code")
           h3(class="expand-sass-code") Sass
-          p INSERT BLOCK OF CODE HERE
+          pre
+            code(class="language-scss").
+              img {
+                width: em(300);
+              }
+      img(src="images/i-heart-typography.jpg" alt="typography description")
+      section(class="expanding")
+        div(class="jade-code")
+          h3(class="expand-jade-code") Jade
+          pre
+            code(class="language-scss") img(src="images/i-heart-typography.jpg" alt="typography description")
+        div(class="sass-code")
+          h3(class="expand-sass-code") Sass
+          pre
+            code(class="language-scss").
+              img {
+                width: em(300);
+              }
+      img(src="images/kerning.png" alt="kerning example")
+      section(class="expanding")
+        div(class="jade-code")
+          h3(class="expand-jade-code") Jade
+          pre
+            code(class="language-scss") img(src="mages/kerning.png" alt="kerning example")
+        div(class="sass-code")
+          h3(class="expand-sass-code") Sass
+          pre
+            code(class="language-scss").
+              img {
+                width: em(300);
+              }
     article
       h1(id="header") Header
       section(class="expanding")
