@@ -31,6 +31,9 @@ main{
          @include span-columns(3 of 9.5);
       }
    }
+   footer{
+      margin-top: 7em;
+   }
 }
 
 //border between the sections
