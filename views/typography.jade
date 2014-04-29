@@ -1,12 +1,22 @@
 article
   h1(id="typography") Typography
   h1 This is an h1 (Main Head)
+  h2 This is an h2 (Subhead)
+  h3 This is an h3
+  h4 This is an h4
+  h5 This is an h5
+  h6 This is an h6
   section(class="expanding")
     div(class="jade-code")
       h3(class="expand-jade-code") Jade
       pre
         code(class="language-markup").
           h1 This is an h1 (Main Head)
+          h2 This is an h2 (Subhead)
+          h3 This is an h3
+          h4 This is an h4
+          h5 This is an h5
+          h6 This is an h6
     div(class="sass-code")
       h3(class="expand-sass-code") Sass
       pre
@@ -14,103 +24,117 @@ article
           $header-font: "Raleway";
           $header-font-weight: 700;
           $header-font-size: 3em;
+          $subhead-font: "Roboto Slab";
+          $subhead-font-weight: 700;
 
           h1 {
              font-family: $header-font;
              font-weight: $header-font-weight;
              font-size: $header-font-size;
           }
-
-  h2 This is an h2 (Subhead)
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-scss").
-          h2 This is an h2 (Subhead)
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          $subhead-font: "Roboto Slab";
-          $subhead-font-weight: 700;
-
           h2 {
              font-family: $subhead-font;
              font-weight: $subhead-font-weight;
           }
-  h3 This is an h3
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-          h3 This is an h3
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          $header-font: "Raleway";
-          $subhead-font-weight: 700;
-
           h3, h4, h5, h6 {
              font-family: $header-font;
              font-weight: $subhead-font-weight;
           }
-  h4 This is an h4
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-          h4 This is an h4
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          $header-font: "Raleway";
-          $subhead-font-weight: 700;
 
-          h3, h4, h5, h6 {
-             font-family: $header-font;
-             font-weight: $subhead-font-weight;
-          }
-  h5 This is an h5
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-          h5 This is an h5
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          $header-font: "Raleway";
-          $subhead-font-weight: 700;
+  //- h2 This is an h2 (Subhead)
+  //- section(class="expanding")
+  //-   div(class="jade-code")
+  //-     h3(class="expand-jade-code") Jade
+  //-     pre
+  //-       code(class="language-scss").
+  //-         h2 This is an h2 (Subhead)
+  //-   div(class="sass-code")
+  //-     h3(class="expand-sass-code") Sass
+  //-     pre
+  //-       code(class="language-scss").
+  //-         $subhead-font: "Roboto Slab";
+  //-         $subhead-font-weight: 700;
 
-          h3, h4, h5, h6 {
-             font-family: $header-font;
-             font-weight: $subhead-font-weight;
-          }
-  h6 This is an h6
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-          h6 This is an h6
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          $header-font: "Raleway";
-          $subhead-font-weight: 700;
+  //-         h2 {
+  //-            font-family: $subhead-font;
+  //-            font-weight: $subhead-font-weight;
+  //-         }
+  //-         h3, h4, h5, h6 {
+  //-            font-family: $header-font;
+  //-            font-weight: $subhead-font-weight;
+  //-         }
+  //- h3 This is an h3
+  //- section(class="expanding")
+  //-   div(class="jade-code")
+  //-     h3(class="expand-jade-code") Jade
+  //-     pre
+  //-       code(class="language-markup").
+  //-         h3 This is an h3
+  //-   div(class="sass-code")
+  //-     h3(class="expand-sass-code") Sass
+  //-     pre
+  //-       code(class="language-scss").
+  //-         $header-font: "Raleway";
+  //-         $subhead-font-weight: 700;
 
-          h3, h4, h5, h6 {
-             font-family: $header-font;
-             font-weight: $subhead-font-weight;
-          }
+  //-         h3, h4, h5, h6 {
+  //-            font-family: $header-font;
+  //-            font-weight: $subhead-font-weight;
+  //-         }
+  //- h4 This is an h4
+  //- section(class="expanding")
+  //-   div(class="jade-code")
+  //-     h3(class="expand-jade-code") Jade
+  //-     pre
+  //-       code(class="language-markup").
+  //-         h4 This is an h4
+  //-   div(class="sass-code")
+  //-     h3(class="expand-sass-code") Sass
+  //-     pre
+  //-       code(class="language-scss").
+  //-         $header-font: "Raleway";
+  //-         $subhead-font-weight: 700;
+
+  //-         h3, h4, h5, h6 {
+  //-            font-family: $header-font;
+  //-            font-weight: $subhead-font-weight;
+  //-         }
+  //- h5 This is an h5
+  //- section(class="expanding")
+  //-   div(class="jade-code")
+  //-     h3(class="expand-jade-code") Jade
+  //-     pre
+  //-       code(class="language-markup").
+  //-         h5 This is an h5
+  //-   div(class="sass-code")
+  //-     h3(class="expand-sass-code") Sass
+  //-     pre
+  //-       code(class="language-scss").
+  //-         $header-font: "Raleway";
+  //-         $subhead-font-weight: 700;
+
+  //-         h3, h4, h5, h6 {
+  //-            font-family: $header-font;
+  //-            font-weight: $subhead-font-weight;
+  //-         }
+  //- h6 This is an h6
+  //- section(class="expanding")
+  //-   div(class="jade-code")
+  //-     h3(class="expand-jade-code") Jade
+  //-     pre
+  //-       code(class="language-markup").
+  //-         h6 This is an h6
+  //-   div(class="sass-code")
+  //-     h3(class="expand-sass-code") Sass
+  //-     pre
+  //-       code(class="language-scss").
+  //-         $header-font: "Raleway";
+  //-         $subhead-font-weight: 700;
+
+  //-         h3, h4, h5, h6 {
+  //-            font-family: $header-font;
+  //-            font-weight: $subhead-font-weight;
+  //-         }
   p This is a paragraph.  Bananas are good Dalekanium Reverse the polarity of the positron flow The Master The Doctor Rose Tyler Hello Sweetie. Would you like a jelly baby? You are better at dying Fantastic! Allons-y Hello, Captain Jack Harkness.  Bad Wolf I am a Dalek Rory the Roman you are not alone in the universe Cult of Skaro Amy Pond Reverse the polarity of the neutron flow Raxacoricofallapatorius Galifreyan Galifreyan The Silence is Coming!
   section(class="expanding")
     div(class="jade-code")
@@ -152,5 +176,8 @@ article
              font-family: $p-font;
              font-weight: $a-font-weight;
              text-decoration: none;
-             color: $teal;
+             color: $green;
+          }
+          a:hover{
+            color: $orange;
           }
