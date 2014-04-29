@@ -9,6 +9,7 @@ $(document).ready(function() {
      });
   };
 
+  scroll("use");
   scroll("colors");
   scroll("typography");
   scroll("textures");
