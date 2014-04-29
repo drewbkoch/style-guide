@@ -1,4 +1,4 @@
-article
+article(class="logo")
   h1(id="logos") Logos
   h2 Main Logo
   p This is the main logo. It should be used in the header of the pages.
@@ -16,38 +16,23 @@ article
             width: em(300);
           }
   h2 Alternate Logos
-  img(src="/images/kernelLogo3.jpg" alt="logo")
+  div(class="logo-block")
+    h3 Alt Logo 1 (kernelLogo3.jpg)
+    img(src="/images/kernelLogo3.jpg" alt="logo")
+  div(class="logo-block")
+    h3 Alt Logo 2 (kernelLogo1.jpg)
+    img(src="/images/kernelLogo1.jpg" alt="logo")
+  div(class="logo-block")
+    h3 Alt Logo 3 (kernelLogo4.jpg)
+    img(src="/images/kernelLogo4.jpg" alt="logo")
   section(class="expanding")
     div(class="jade-code")
       h3(class="expand-jade-code") Jade
       pre
-        code(class="language-scss") img(src="/images/kernelLogo3.jpg" alt="logo")
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          img {
-            width: em(300);
-          }
-  img(src="/images/kernelLogo1.jpg" alt="logo")
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-scss") img(src="/images/kernelLogo1.jpg" alt="logo")
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          img {
-            width: em(300);
-          }
-  img(src="/images/kernelLogo4.jpg" alt="logo")
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-scss") img(src="/images/kernelLogo4.jpg" alt="logo")
+        code(class="language-markup").
+         img(src="/images/kernelLogo3.jpg" alt="logo")
+         img(src="/images/kernelLogo1" alt="logo")
+         img(src="/images/kernelLogo4" alt="logo")
     div(class="sass-code")
       h3(class="expand-sass-code") Sass
       pre
