@@ -16,6 +16,9 @@ nav a{
 
 main{
    @include span-columns(9.5);
+   h1{
+      @include span-columns(9.5 of 9.5);
+   }
    @include shift(2.5);
 }
 
@@ -143,3 +146,4 @@ nav a:hover{
 #head{
    margin-bottom: 6em;
 }
+

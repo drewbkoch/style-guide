@@ -1,0 +1,26 @@
+.sub-nav{
+   @include span-columns(2);
+   position: fixed;
+   display: block;
+   margin-top: 6em;
+   margin-left: 1em;
+   border-right: 2px solid $orange;
+   a{
+      font-family: $subhead-font;
+      font-weight: $subhead-font-weight;
+      font-size: 1.3em;
+      color: $salmon;
+   }
+}
+.sub-nav-guide{
+   @include span-columns(2);
+   display: block;
+   padding-left: -2em;
+   border-right: 2px solid $orange;
+   a{
+      font-family: $subhead-font;
+      font-weight: $subhead-font-weight;
+      font-size: 1.3em;
+      color: $salmon;
+   }
+}
