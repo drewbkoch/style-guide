@@ -3,6 +3,7 @@ extends layout
 block content
   nav
     h1= title
+    a(href="#" id="scroll-use") How to Use
     a(href="#" id="scroll-colors") Colors
     a(href="#" id="scroll-typography") Typography
     a(href="#" id="scroll-textures") Textures
@@ -13,6 +14,9 @@ block content
     a(href="#" id="scroll-header") Header
     a(href="#" id="scroll-footer") Footer
   main
+    h1(id="use") How to use this style Guide
+    p In order to maintain consistent design and brand specifications, as well as standardized coding, we have created this living style guide.  We have defined and exhibited core UI elements, which can be re-used to ensure quick and easy implementation.
+    p Using the code samples provided in this guide, this web app should maintain a desired level of consistency and efficiency.
     include colors
     include typography
     include textures
