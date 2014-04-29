@@ -42,7 +42,7 @@ main{
    -webkit-transition: $expand-transition;
    -moz-transition: $expand-transition;
    transition: $expand-transition;
-   max-height:700px;
+   max-height:800px;
 }
 
 
@@ -100,8 +100,13 @@ li{
    margin: .4em;
 }
 
-.icon-mail, .icon-googleplus, .icon-facebook, .icon-twitter, .icon-feed, .icon-vimeo, .icon-flickr, .icon-dribbble, .icon-github, .icon-pinterest{
-   margin: .4em;
+// .icon-mail, .icon-googleplus, .icon-facebook, .icon-twitter, .icon-feed, .icon-vimeo, .icon-flickr, .icon-dribbble, .icon-github, .icon-pinterest{
+//    margin: .4em;
+// }
+
+.icons > div{
+   display: inline-block;
+   padding: 1em;
 }
 
 // texture images
