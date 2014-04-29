@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  nav
+  nav(class="guide-nav")
     h1= title
     a(href="#" id="scroll-use") How to Use
     a(href="#" id="scroll-colors") Colors
@@ -12,6 +12,7 @@ block content
     a(href="#" id="scroll-buttons") Buttons
     a(href="#" id="scroll-images") Images
     a(href="#" id="scroll-header") Header
+    a(href="#" id="scroll-subnav") Sub-Nav
     a(href="#" id="scroll-footer") Footer
   main
     h1(id="use") How to use this style Guide
@@ -25,5 +26,6 @@ block content
     include buttons
     include images
     include header
+    include subnav
     include footer
 
