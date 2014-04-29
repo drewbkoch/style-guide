@@ -1,7 +1,7 @@
 article
   h1(id="header") Header
   nav(class="kernel-nav" id="headz")
-      img(src="/images/kernelLogo2.jpg" alt="logo")
+      img(src="/images/kernelLogo.png" alt="logo")
       div
          a(href="#") Home
          a(href="#") My Fonts
@@ -13,7 +13,7 @@ article
       pre
         code(class="language-markup").
          nav(class="kernel-nav")
-            img(src="/images/kernelLogo2.jpg" alt="logo")
+            img(src="/images/kernelLogo.png" alt="logo")
             div
                a(href="#") Home
                a(href="#") My Fonts
@@ -26,6 +26,7 @@ article
          $logo-width: em(160);
 
          nav.kernel-nav{
+            background-image: url(/images/texture3.jpg);
             img{
                width: $logo-width;
                margin-left: 1.8em;
@@ -34,7 +35,7 @@ article
                font-family: $header-font;
                font-weight: $header-font-weight;
                font-size: 3em;
-               color: $orange;
+               color: $brown;
                display: inline-block;
                margin-left: 1em;
                margin-bottom: .6em;
