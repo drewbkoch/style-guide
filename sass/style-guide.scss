@@ -6,7 +6,7 @@
 $expand-transition: all 0.5s;
 
 //grid layout
-nav{
+nav.guide-nav{
    @include span-columns(2.5);
    position: fixed;
 }
@@ -137,4 +137,9 @@ nav a:hover{
 
 .expand-sass-code, .expand-jade-code{
    color: $green;
+}
+
+//to get the header to not overlap with the sass and jade code
+#head{
+   margin-bottom: 6em;
 }
