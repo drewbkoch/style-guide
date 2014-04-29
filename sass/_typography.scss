@@ -69,3 +69,7 @@ $icons: (icon-mail '\e600') (icon-googleplus '\e601') (icon-facebook '\e602') (i
   }
 }
 
+.icon-mail, .icon-googleplus, .icon-facebook, .icon-twitter, .icon-feed, .icon-vimeo, .icon-flickr, .icon-dribbble, .icon-github, .icon-pinterest{
+  font-size: 2em;
+  color: $orange;
+}
