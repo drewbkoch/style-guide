@@ -20,6 +20,9 @@ main{
       @include span-columns(9.5 of 9.5);
    }
    @include shift(2.5);
+   .expanding{
+      @include span-columns(9.5 of 9.5);
+   }
 }
 
 // To expand the Jade and Sass links to show the blocks of code
