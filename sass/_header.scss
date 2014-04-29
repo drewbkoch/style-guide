@@ -1,6 +1,7 @@
 $logo-width: em(160);
 
 nav.kernel-nav{
+   background-image: url(/images/texture3.jpg);
    img{
       width: $logo-width;
       margin-left: 1.8em;
@@ -9,7 +10,7 @@ nav.kernel-nav{
       font-family: $header-font;
       font-weight: $header-font-weight;
       font-size: 2em;
-      color: $orange;
+      color: $brown;
       display: inline-block;
       margin-left: 1em;
       margin-bottom: .6em;
