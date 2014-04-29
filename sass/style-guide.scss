@@ -25,10 +25,12 @@ main{
    }
 }
 
-// To expand the Jade and Sass links to show the blocks of code
-.expanding {
-    display:block;
+
+article{
+   border-bottom: 2px solid $orange;
 }
+
+// To expand the Jade and Sass links to show the blocks of code
 
 .expand-jade-code, .expand-sass-code {
    cursor:pointer;
@@ -145,8 +147,10 @@ nav a:hover{
    color: $green;
 }
 
+
 //to get the header to not overlap with the sass and jade code
-#head{
+#header{
    margin-bottom: 6em;
 }
+
 

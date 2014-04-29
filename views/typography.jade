@@ -1,12 +1,23 @@
 article
   h1(id="typography") Typography
+  p h1 is used for the main headlines on each page.  h2 is used for subheadlines.  h3-h6 are used for accenting text, and smaller headings within the larger two.
   h1 This is an h1 (Main Head)
+  h2 This is an h2 (Subhead)
+  h3 This is an h3
+  h4 This is an h4
+  h5 This is an h5
+  h6 This is an h6
   section(class="expanding")
     div(class="jade-code")
       h3(class="expand-jade-code") Jade
       pre
         code(class="language-markup").
           h1 This is an h1 (Main Head)
+          h2 This is an h2 (Subhead)
+          h3 This is an h3
+          h4 This is an h4
+          h5 This is an h5
+          h6 This is an h6
     div(class="sass-code")
       h3(class="expand-sass-code") Sass
       pre
@@ -14,99 +25,18 @@ article
           $header-font: "Raleway";
           $header-font-weight: 700;
           $header-font-size: 3em;
+          $subhead-font: "Roboto Slab";
+          $subhead-font-weight: 700;
 
           h1 {
              font-family: $header-font;
              font-weight: $header-font-weight;
              font-size: $header-font-size;
           }
-
-  h2 This is an h2 (Subhead)
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-scss").
-          h2 This is an h2 (Subhead)
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          $subhead-font: "Roboto Slab";
-          $subhead-font-weight: 700;
-
           h2 {
              font-family: $subhead-font;
              font-weight: $subhead-font-weight;
           }
-  h3 This is an h3
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-          h3 This is an h3
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          $header-font: "Raleway";
-          $subhead-font-weight: 700;
-
-          h3, h4, h5, h6 {
-             font-family: $header-font;
-             font-weight: $subhead-font-weight;
-          }
-  h4 This is an h4
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-          h4 This is an h4
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          $header-font: "Raleway";
-          $subhead-font-weight: 700;
-
-          h3, h4, h5, h6 {
-             font-family: $header-font;
-             font-weight: $subhead-font-weight;
-          }
-  h5 This is an h5
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-          h5 This is an h5
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          $header-font: "Raleway";
-          $subhead-font-weight: 700;
-
-          h3, h4, h5, h6 {
-             font-family: $header-font;
-             font-weight: $subhead-font-weight;
-          }
-  h6 This is an h6
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-          h6 This is an h6
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          $header-font: "Raleway";
-          $subhead-font-weight: 700;
-
           h3, h4, h5, h6 {
              font-family: $header-font;
              font-weight: $subhead-font-weight;
@@ -152,5 +82,8 @@ article
              font-family: $p-font;
              font-weight: $a-font-weight;
              text-decoration: none;
-             color: $teal;
+             color: $green;
+          }
+          a:hover{
+            color: $orange;
           }
