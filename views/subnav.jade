@@ -1,0 +1,37 @@
+article
+  h1(id="subnav") Sub-Nav
+  nav(class="sub-nav-guide")
+      a(href="#") Sans Serif
+      a(href="#") Serif
+      a(href="#") Script
+      a(href="#") Slab
+      a(href="#") Handwritten
+  section(class="expanding")
+    div(class="jade-code")
+      h3(class="expand-jade-code") Jade
+      pre
+        code(class="language-markup").
+         nav(class="sub-nav")
+          a(href="#") Sans Serif
+          a(href="#") Serif
+          a(href="#") Script
+          a(href="#") Slab
+          a(href="#") Handwritten
+    div(class="sass-code")
+      h3(class="expand-sass-code") Sass
+      pre
+        code(class="language-scss").
+          .sub-nav{
+             @include span-columns(2);
+             position: fixed;
+             display: block;
+             margin-top: 6em;
+             margin-left: 1em;
+             border-right: 2px solid $orange;
+             a{
+                font-family: $subhead-font;
+                font-weight: $subhead-font-weight;
+                font-size: 1.3em;
+                color: $salmon;
+             }
+          }

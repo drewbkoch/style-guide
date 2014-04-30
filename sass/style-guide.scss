@@ -6,7 +6,7 @@
 $expand-transition: all 0.5s;
 
 //grid layout
-nav{
+nav.guide-nav{
    @include span-columns(2.5);
    position: fixed;
 }
@@ -17,9 +17,26 @@ nav a{
 main{
    @include span-columns(9.5);
    @include shift(2.5);
+   h1{
+      @include span-columns(9.5 of 9.5);
+   }
+   article{
+      @include span-columns(9.5 of 9.5);
+   }
+   .expanding{
+      @include span-columns(9.5 of 9.5);
+   }
+   .logo{
+      .logo-block{
+         @include span-columns(3 of 9.5);
+      }
+   }
+   footer{
+      margin-top: 7em;
+   }
 }
 
-
+//border between the sections
 article{
    border-bottom: 2px solid $orange;
 }
@@ -44,20 +61,16 @@ article{
    -webkit-transition: $expand-transition;
    -moz-transition: $expand-transition;
    transition: $expand-transition;
-   max-height:700px;
+   max-height:800px;
 }
 
 
+
+//styling the color swatches
 
 ul.swatches{
    list-style: none;
 }
-
-// code{
-//    background-color: #EDE3C9;
-//    border: 1px solid #FFC893;
-//    border-radius: 3px;
-// }
 
 
 
@@ -96,15 +109,24 @@ ul.swatches{
    background-color: $navy;
    color: $light-gray;
 }
+.brown-swatch{
+   @include color-swatch;
+   background-color: $brown;
+   color: $light-gray;
+}
 
 li{
    display: inline-block;
    margin: .4em;
 }
 
-.icon-mail, .icon-googleplus, .icon-facebook, .icon-twitter, .icon-feed, .icon-vimeo, .icon-flickr, .icon-dribbble, .icon-github, .icon-pinterest{
-   margin: .4em;
+
+.icons > div{
+   display: inline-block;
+   padding: 1em;
 }
+
+
 
 // texture images
 .texture > img{
@@ -123,6 +145,8 @@ img {
   width: em(300);
 }
 
+
+
 //typography colors
 
 nav a{
@@ -138,4 +162,9 @@ nav a:hover{
 
 .forms ul li {
    display: block;
+}
+
+//to get the header to not overlap with the sass and jade code
+#headz{
+   margin-bottom: 6em;
 }

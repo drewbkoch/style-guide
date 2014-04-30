@@ -1,9 +1,54 @@
 article
   h1(id="header") Header
+  nav(class="kernel-nav" id="headz")
+      img(src="/images/kernelLogo.png" alt="logo")
+      div
+         a(href="#") Home
+         a(href="#") My Fonts
+         a(href="#") Profile
+         a(href="#") Logout
   section(class="expanding")
     div(class="jade-code")
       h3(class="expand-jade-code") Jade
-      p INSERT BLOCK OF CODE HERE
+      pre
+        code(class="language-markup").
+         nav(class="kernel-nav")
+            img(src="/images/kernelLogo.png" alt="logo")
+            div
+               a(href="#") Home
+               a(href="#") My Fonts
+               a(href="#") Profile
+               a(href="#") Logout
     div(class="sass-code")
       h3(class="expand-sass-code") Sass
-      p INSERT BLOCK OF CODE HERE
+      pre
+        code(class="language-scss").
+         $logo-width: em(160);
+
+         nav.kernel-nav{
+            background-image: url(/images/texture3.jpg);
+            img{
+               width: $logo-width;
+               margin-left: 1.8em;
+            }
+            a{
+               font-family: $header-font;
+               font-weight: $header-font-weight;
+               font-size: 3em;
+               color: $brown;
+               display: inline-block;
+               margin-left: 1em;
+               margin-bottom: .6em;
+            }
+            a:hover{
+               color: $magenta;
+            }
+            a:active{
+               color: $salmon;
+            }
+            div{
+               margin-top: -9em;
+               margin-left: $logo-width + 1;
+            }
+            border-bottom: 2px solid $orange;
+         }

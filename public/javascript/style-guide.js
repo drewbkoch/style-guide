@@ -9,6 +9,7 @@ $(document).ready(function() {
      });
   };
 
+  scroll("use");
   scroll("colors");
   scroll("typography");
   scroll("textures");
@@ -17,6 +18,7 @@ $(document).ready(function() {
   scroll("buttons");
   scroll("images");
   scroll("header");
+  scroll("subnav");
   scroll("footer");
   scroll("forms");
 
