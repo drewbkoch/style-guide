@@ -1,0 +1,22 @@
+
+//icomoon icons
+@font-face {
+  font-family: 'icomoon';
+  src:url('/fonts/icomoon.eot?1nkbuj');
+  src:url('/icomoon.eot?#iefix1nkbuj') format('embedded-opentype'),
+    url('/fonts/icomoon.woff?1nkbuj') format('woff'),
+    url('/fonts/icomoon.ttf?1nkbuj') format('truetype'),
+    url('/fonts/icomoon.svg?1nkbuj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+ %ico-font-base {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+  }

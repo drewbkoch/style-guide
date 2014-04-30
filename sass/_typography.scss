@@ -1,3 +1,5 @@
+@import "typography/manifest";
+
 $code-font: "PT Mono";
 $header-font: "Raleway";
 $header-font-weight: 700;
@@ -37,36 +39,6 @@ a:hover{
 h3, h4, h5, h6 {
    font-family: $header-font;
    font-weight: $subhead-font-weight;
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot?1nkbuj');
-  src:url('../icomoon.eot?#iefix1nkbuj') format('embedded-opentype'),
-    url('../fonts/icomoon.woff?1nkbuj') format('woff'),
-    url('../fonts/icomoon.ttf?1nkbuj') format('truetype'),
-    url('../fonts/icomoon.svg?1nkbuj#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
- %ico-font-base {
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-  }
-
-$icons: (icon-mail '\e600') (icon-googleplus '\e601') (icon-facebook '\e602') (icon-twitter '\e603') (icon-feed '\e604') (icon-vimeo '\e605') (icon-flickr '\e606') (icon-dribbble '\e607') (icon-github '\e609') (icon-pinterest '\e60a');
-
-@each $icon in $icons {
-  .#{nth($icon, 1)}:before {
-    content: nth($icon, 2);
-    @extend %ico-font-base;
-  }
 }
 
 .icon-mail, .icon-googleplus, .icon-facebook, .icon-twitter, .icon-feed, .icon-vimeo, .icon-flickr, .icon-dribbble, .icon-github, .icon-pinterest{
