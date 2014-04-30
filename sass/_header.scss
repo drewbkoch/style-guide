@@ -1,4 +1,6 @@
 $logo-width: em(160);
+$desktop: new-breakpoint(min-width 481px);
+$mobile: new-breakpoint(max-width 480px);
 
 nav.kernel-nav{
    background-image: url(/images/texture3.jpg);
@@ -6,20 +8,33 @@ nav.kernel-nav{
       width: $logo-width;
       margin-left: 1.8em;
    }
-   a{
-      font-family: $header-font;
-      font-weight: $header-font-weight;
-      font-size: 2em;
-      color: $brown;
-      display: inline-block;
-      margin-left: 1em;
-      margin-bottom: .6em;
-   }
    a:hover{
       color: $magenta;
    }
    a:active{
       color: $salmon;
+   }
+   a{
+      font-family: $header-font;
+      font-weight: $header-font-weight;
+   }
+   @include media($desktop) {
+      a{
+         font-size: 2em;
+         color: $brown;
+         display: inline-block;
+         margin-left: 1em;
+         margin-bottom: .6em;
+      }
+   }
+   @include media($mobile) {
+      a{
+         font-size: 1em;
+         color: $brown;
+         display: inline-block;
+         margin-left: 1em;
+         margin-bottom: .6em;
+      }
    }
    div{
       margin-top: -9em;
