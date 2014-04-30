@@ -1,13 +1,16 @@
 footer{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
    background-image: url(/images/texture3.jpg);
    text-align: center;
-   p{
-      display: inline-block;
-      padding-left: 6em;
-      padding-right: 6em;
-   }
+   width: 100%;
+
    a{
       margin-left: 3em;
+      &:first-child {
+         margin-left: 0;
+      }
    }
    a:hover{
       color: $magenta;
@@ -20,4 +23,11 @@ footer{
    }
    border-top: 2px solid $orange;
    height: 6em;
+   @include media($mobile) {
+      flex-direction: column;
+      height: 10em;
+      a {
+         margin-left: 1em;
+      }
+   }
 }
