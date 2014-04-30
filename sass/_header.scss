@@ -1,8 +1,7 @@
 $logo-width: em(160);
-$desktop: new-breakpoint(min-width 481px);
-$mobile: new-breakpoint(max-width 480px);
+$logo-width-small: em(100);
 
-nav.kernel-nav{
+nav#headz{
    background-image: url(/images/texture3.jpg);
    img{
       width: $logo-width;
@@ -17,28 +16,40 @@ nav.kernel-nav{
    a{
       font-family: $header-font;
       font-weight: $header-font-weight;
+      display: inline-block;
+      margin-left: 1em;
+      margin-bottom: .6em;
+      color: $brown;
+   }
+   div{
+      margin-top: -8em;
+      margin-left: $logo-width + 1;
    }
    @include media($desktop) {
       a{
          font-size: 2em;
-         color: $brown;
-         display: inline-block;
-         margin-left: 1em;
-         margin-bottom: .6em;
+      }
+   }
+   @include media($tablet) {
+      a{
+         font-size: 1.7em;
       }
    }
    @include media($mobile) {
-      a{
-         font-size: 1em;
-         color: $brown;
-         display: inline-block;
-         margin-left: 1em;
-         margin-bottom: .6em;
+      margin-top: 1em;
+      img{
+         width: $logo-width-small;
+         margin-left: .3em;
+         padding: 0;
       }
-   }
-   div{
-      margin-top: -9em;
-      margin-left: $logo-width + 1;
+      a{
+         font-size: .9em;
+         margin-top: 4em;
+      }
+      div{
+         margin-top: -8em;
+         margin-left: $logo-width-small + 1;
+      }
    }
    border-bottom: 2px solid $orange;
 }
