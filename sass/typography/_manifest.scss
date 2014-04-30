@@ -1,0 +1,9 @@
+@import "extends";
+@import "config";
+
+@each $icon in $icons {
+  .#{nth($icon, 1)}:before {
+    content: nth($icon, 2);
+    @extend %ico-font-base;
+  }
+}
