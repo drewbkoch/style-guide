@@ -18,6 +18,7 @@ $(document).ready(function() {
   scroll("images");
   scroll("header");
   scroll("footer");
+  scroll("forms");
 
   $(".expand-jade-code").click(function(){
     $(this).parent().toggleClass("open");
