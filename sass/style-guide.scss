@@ -2,43 +2,84 @@
 @import "bourbon";
 @import "neat";
 @import "colors";
+@import "typography";
+@import "breakpoints";
 
 $expand-transition: all 0.5s;
 
-//grid layout
-nav.guide-nav{
-   @include span-columns(2.5);
-   position: fixed;
-}
-nav a{
-   display: block;
-}
 
-main{
-   @include span-columns(9.5);
-   @include shift(2.5);
-   h1{
-      @include span-columns(9.5 of 9.5);
-   }
-   article{
-      @include span-columns(9.5 of 9.5);
-   }
-   .expanding{
-      @include span-columns(9.5 of 9.5);
-   }
-   .logo{
-      .logo-block{
-         @include span-columns(3 of 9.5);
+//grid layout- responsive web design for the style guide
+nav.guide-nav{
+   @include media($desktop) {
+      @include span-columns(2.5);
+      position: fixed;
+      a{
+          display: block;
       }
    }
-   footer{
-      margin-top: 7em;
+   @include media($mobile) {
+      @include span-columns(12);
+      margin:0;
+      padding:0;
+      position: fixed;
+      z-index: 1;
+      background-color: $orange;
+      border-bottom: 4px solid $brown;
+      top:0;
+      a{
+          display: inline-block;
+      }
+   }
+}
+#use{
+   @include media($mobile) {
+      margin-top: 5.1em;
+   }
+}
+
+
+main{
+   @include media($desktop) {
+      @include span-columns(9.5);
+      @include shift(2.5);
+      h1{
+      @include span-columns(9.5 of 9.5);
+      }
+      article{
+         @include span-columns(9.5 of 9.5);
+      }
+      .expanding{
+         @include span-columns(9.5 of 9.5);
+      }
+      .logo{
+         .logo-block{
+            @include span-columns(3 of 9.5);
+         }
+      }
+      footer{
+         margin-top: 7em;
+      }
    }
 }
 
 //border between the sections
 article{
    border-bottom: 2px solid $orange;
+}
+
+//style the subnav within the style-guide
+.sub-nav-guide{
+   @include span-columns(2);
+   display: block;
+   padding-left: -2em;
+   border-right: 2px solid $orange;
+   a{
+      font-family: $subhead-font;
+      font-weight: $subhead-font-weight;
+      font-size: 1.3em;
+      color: $salmon;
+      display: block;
+   }
 }
 
 // To expand the Jade and Sass links to show the blocks of code
