@@ -3,18 +3,20 @@ extends layout
 block content
   nav(class="guide-nav")
     h1= title
-    a(href="#" id="scroll-use") How to Use
-    a(href="#" id="scroll-colors") Colors
-    a(href="#" id="scroll-typography") Typography
-    a(href="#" id="scroll-textures") Textures
-    a(href="#" id="scroll-logos") Logos
-    a(href="#" id="scroll-icons") Icons
-    a(href="#" id="scroll-buttons") Buttons
-    a(href="#" id="scroll-images") Images
-    a(href="#" id="scroll-header") Header
-    a(href="#" id="scroll-subnav") Sub-Nav
-    a(href="#" id="scroll-footer") Footer
-    a(href="#" id="scroll-forms") Forms
+    button(id="mobile-menu-trigger" class="mobile-menu-trigger") Menu
+    div(class="mobile-menu" id="mobile-menu")
+      a(href="#" id="scroll-use") How to Use
+      a(href="#" id="scroll-colors") Colors
+      a(href="#" id="scroll-typography") Typography
+      a(href="#" id="scroll-textures") Textures
+      a(href="#" id="scroll-logos") Logos
+      a(href="#" id="scroll-icons") Icons
+      a(href="#" id="scroll-buttons") Buttons
+      a(href="#" id="scroll-images") Images
+      a(href="#" id="scroll-header") Header
+      a(href="#" id="scroll-subnav") Sub-Nav
+      a(href="#" id="scroll-footer") Footer
+      a(href="#" id="scroll-forms") Forms
   main
     h1(id="use") How to use this style Guide
     p In order to maintain consistent design and brand specifications, as well as standardized coding, we have created this living style guide.  We have defined and exhibited core UI elements, which can be re-used to ensure quick and easy implementation.

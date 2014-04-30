@@ -4,33 +4,12 @@
 @import "colors";
 @import "typography";
 @import "breakpoints";
+@import "SG-nav";
 
 $expand-transition: all 0.5s;
 
 
 //grid layout- responsive web design for the style guide
-nav.guide-nav{
-   @include media($desktop) {
-      @include span-columns(2.5);
-      position: fixed;
-      a{
-          display: block;
-      }
-   }
-   @include media($mobile) {
-      @include span-columns(12);
-      margin:0;
-      padding:0;
-      position: fixed;
-      z-index: 1;
-      background-color: $orange;
-      border-bottom: 4px solid $brown;
-      top:0;
-      a{
-          display: inline-block;
-      }
-   }
-}
 #use{
    @include media($mobile) {
       margin-top: 5.1em;

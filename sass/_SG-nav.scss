@@ -1,0 +1,41 @@
+// .expanded{
+//    max-height: em(1000);
+//    // overflow: auto !important;
+//    background-color: red;
+// }
+
+nav.guide-nav{
+   @include media($desktop) {
+      @include span-columns(2.5);
+      position: fixed;
+      .mobile-menu-trigger{
+         display: none;
+      }
+      a{
+          display: block;
+      }
+   }
+   @include media($mobile) {
+      @include span-columns(12);
+      h1{
+         display: inline-block;
+      }
+      .mobile-menu-trigger{
+         display: inline-block;
+      }
+      .mobile-menu{
+         height:0;
+         overflow: hidden;
+         transition: height 0.7s ease;
+      }
+      .expanded{
+         height: auto;
+      }
+      position: fixed;
+      z-index: 1;
+      top:0;
+      a{
+          display: block;
+      }
+   }
+}
