@@ -53,7 +53,8 @@ main{
       }
       .logo{
          .logo-block{
-            @include span-columns(3 of 9.5);
+            display: inline-block;
+            vertical-align: top;
          }
       }
       footer{
