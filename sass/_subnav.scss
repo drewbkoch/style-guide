@@ -1,16 +1,29 @@
-.sub-nav{
-   @include span-columns(2);
-   position: fixed;
-   display: block;
-   margin-top: 6em;
+nav.sub-nav{
+   background-image: url(/images/texture2.jpg);
    margin-left: 1em;
-   border-right: 2px solid $orange;
+   @include media($desktop) {
+      border-right: 3px solid $orange;
+      width: 30%;
+   }
+   @include media($tablet) {
+      border-right: 3px solid $orange;
+      width: 37%;
+   }
+   @include media($mobile) {
+      border-bottom: 3px solid $orange;
+      margin-top: 2em;
+   }
    a{
       font-family: $subhead-font;
       font-weight: $subhead-font-weight;
       font-size: 1.3em;
       color: $salmon;
       display: block;
+      @include media($mobile) {
+         display: inline-block;
+         padding: .4em;
+         font-size: .9em;
+      }
    }
 }
 
