@@ -1,0 +1,45 @@
+nav.guide-nav{
+   @include media($desktop) {
+      @include span-columns(2.5);
+      position: fixed;
+      .mobile-menu-trigger{
+         display: none;
+      }
+      a{
+          display: block;
+      }
+   }
+   @include media($not-desktop) {
+      width: 100%;
+      h1{
+         display: inline-block;
+      }
+      .mobile-menu-trigger{
+         position: absolute;
+         right: em(30);
+         top: em(22);
+      }
+      .mobile-menu{
+         height:0;
+         overflow: hidden;
+         transition: .4s;
+         -webkit-transition: .4s;
+         padding: 0 em(10);
+      }
+      .expanded{
+         height: em(253);
+      }
+      h1 {
+         margin: 0;
+         padding: em(2);
+      }
+      position: fixed;
+      background-color: white;
+      border-bottom: 5px solid darken($orange, 15%);
+      z-index: 1;
+      top:0;
+      a{
+          display: block;
+      }
+   }
+}
