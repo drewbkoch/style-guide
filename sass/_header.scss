@@ -50,17 +50,17 @@ nav#headz{
       background-image: url(/images/texture3.jpg);
       img{
          width: $logo-width-small;
-         margin-left: em(140);
+         margin-left: em(100);
          display: inline-block;
       }
       button.header-trigger{
          position: absolute;
          top: 4em;
-         right: 13em;
+         right: 8em;
          background-color: $salmon;
          color: white;
          border: none;
-         width: 6em;
+         width: 5em;
          font-size: 1em;
       }
       div{
@@ -71,7 +71,7 @@ nav#headz{
          width: 100%;
          overflow: hidden;
          margin-top: -em(5);
-         padding-left: em(201);
+         padding-left: em(90);
          transition: .4s;
          -webkit-transition: .4s;
       }
