@@ -11,54 +11,56 @@ article
       a(href="#") about
       a(href="#") logout
   section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-         footer
-           div(class="social-media")
-             a(href="#" class="icon-facebook")
-             a(href="#" class="icon-twitter")
-             a(href="#" class="icon-github")
-             a(href="#" class="icon-pinterest")
-           p(class="copyright") © 2014 Kernel, inc
-           nav
-             a(href="#") about
-             a(href="#") logout
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-         footer{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-image: url(/images/texture3.jpg);
-            text-align: center;
-            width: 100%;
+    button(class="expand-code") See code
+    div(class="code")
+      div(class="jade-code")
+        h3(class="expand-jade-code") Jade
+        pre
+          code(class="language-markup").
+           footer
+             div(class="social-media")
+               a(href="#" class="icon-facebook")
+               a(href="#" class="icon-twitter")
+               a(href="#" class="icon-github")
+               a(href="#" class="icon-pinterest")
+             p(class="copyright") © 2014 Kernel, inc
+             nav
+               a(href="#") about
+               a(href="#") logout
+      div(class="sass-code")
+        h3(class="expand-sass-code") Sass
+        pre
+          code(class="language-scss").
+           footer{
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              background-image: url(/images/texture3.jpg);
+              text-align: center;
+              width: 100%;
 
-            a{
-               margin-left: 3em;
-               &:first-child {
-                  margin-left: 0;
-               }
-            }
-            a:hover{
-               color: $magenta;
-            }
-            .icon-facebook, .icon-twitter, .icon-github, .icon-pinterest{
-               margin-left: .4em;
-            }
-            .icon-facebook:hover, .icon-twitter:hover, .icon-github:hover, .icon-pinterest:hover{
-               color: $magenta;
-            }
-            border-top: 2px solid $orange;
-            height: 6em;
-            @include media($mobile) {
-               flex-direction: column;
-               height: 10em;
-               a {
-                  margin-left: 1em;
-               }
-            }
-         }
+              a{
+                 margin-left: 3em;
+                 &:first-child {
+                    margin-left: 0;
+                 }
+              }
+              a:hover{
+                 color: $magenta;
+              }
+              .icon-facebook, .icon-twitter, .icon-github, .icon-pinterest{
+                 margin-left: .4em;
+              }
+              .icon-facebook:hover, .icon-twitter:hover, .icon-github:hover, .icon-pinterest:hover{
+                 color: $magenta;
+              }
+              border-top: 2px solid $orange;
+              height: 6em;
+              @include media($mobile) {
+                 flex-direction: column;
+                 height: 10em;
+                 a {
+                    margin-left: 1em;
+                 }
+              }
+           }

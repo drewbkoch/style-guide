@@ -31,53 +31,55 @@ article(class="icons")
     span(class="icon-pinterest")
     p Pinterest
   section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-          span(class="icon-mail") Email
-          span(class="icon-googleplus") Google Plus
-          span(class="icon-facebook") Facebook
-          span(class="icon-twitter") Twitter
-          span(class="icon-feed") Feed
-          span(class="icon-vimeo") Vimeo
-          span(class="icon-flickr") Flickr
-          span(class="icon-dribbble") Dribbble
-          span(class="icon-github") Github
-          span(class="icon-pinterest") Pinterest
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          @font-face {
-          font-family: 'icomoon';
-          src:url('../fonts/icomoon.eot?1nkbuj');
-          src:url('../icomoon.eot?#iefix1nkbuj') format('embedded-opentype'),
-            url('../fonts/icomoon.woff?1nkbuj') format('woff'),
-            url('../fonts/icomoon.ttf?1nkbuj') format('truetype'),
-            url('../fonts/icomoon.svg?1nkbuj#icomoon') format('svg');
-          font-weight: normal;
-          font-style: normal;}
+    button(class="expand-code") See Code
+    div(class="code")
+      div(class="jade-code")
+        h3(class="expand-jade-code") Jade
+        pre
+          code(class="language-markup").
+            span(class="icon-mail") Email
+            span(class="icon-googleplus") Google Plus
+            span(class="icon-facebook") Facebook
+            span(class="icon-twitter") Twitter
+            span(class="icon-feed") Feed
+            span(class="icon-vimeo") Vimeo
+            span(class="icon-flickr") Flickr
+            span(class="icon-dribbble") Dribbble
+            span(class="icon-github") Github
+            span(class="icon-pinterest") Pinterest
+      div(class="sass-code")
+        h3(class="expand-sass-code") Sass
+        pre
+          code(class="language-scss").
+            @font-face {
+            font-family: 'icomoon';
+            src:url('../fonts/icomoon.eot?1nkbuj');
+            src:url('../icomoon.eot?#iefix1nkbuj') format('embedded-opentype'),
+              url('../fonts/icomoon.woff?1nkbuj') format('woff'),
+              url('../fonts/icomoon.ttf?1nkbuj') format('truetype'),
+              url('../fonts/icomoon.svg?1nkbuj#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;}
 
-          %ico-font-base {
-              /font-family: 'icomoon';
-              speak: none;
-              font-style: normal;
-              font-weight: normal;
-              line-height: 1;
-              -webkit-font-smoothing: antialiased;
+            %ico-font-base {
+                /font-family: 'icomoon';
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+              }
+
+            $icons: (icon-mail '\e600') (icon-googleplus '\e601') (icon-facebook '\e602') (icon-twitter '\e603') (icon-feed '\e604') (icon-vimeo '\e605') (icon-flickr '\e606') (icon-dribbble '\e607') (icon-github '\e609') (icon-pinterest '\e60a');
+
+            @each $icon in $icons {
+              \#{nth($icon, 1)}:before {
+                content: nth($icon, 2);
+                @extend %ico-font-base;
+              }
             }
 
-          $icons: (icon-mail '\e600') (icon-googleplus '\e601') (icon-facebook '\e602') (icon-twitter '\e603') (icon-feed '\e604') (icon-vimeo '\e605') (icon-flickr '\e606') (icon-dribbble '\e607') (icon-github '\e609') (icon-pinterest '\e60a');
-
-          @each $icon in $icons {
-            \#{nth($icon, 1)}:before {
-              content: nth($icon, 2);
-              @extend %ico-font-base;
+            .icon-mail, .icon-googleplus, .icon-facebook, .icon-twitter, .icon-feed, .icon-vimeo, .icon-flickr, .icon-dribbble, .icon-github, .icon-pinterest{
+              font-size: 2em;
+              color: $orange;
             }
-          }
-
-          .icon-mail, .icon-googleplus, .icon-facebook, .icon-twitter, .icon-feed, .icon-vimeo, .icon-flickr, .icon-dribbble, .icon-github, .icon-pinterest{
-            font-size: 2em;
-            color: $orange;
-          }

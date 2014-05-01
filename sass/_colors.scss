@@ -8,6 +8,7 @@ $navy: #1F2058;
 $light-gray: #B2B2B3;
 $dark-gray: #727273;
 $brown: #9d512f;
+$main-color: #FFAC6F;
 
 h1{
    color: $magenta;
@@ -23,3 +24,7 @@ p{
 h3, h4, h5, h6{
    color: $salmon;
 }
+
+// body{
+//    background-color: $main-color;
+// }
