@@ -43,5 +43,16 @@ $(document).ready(function() {
     });
   });
 
+  $('#header-trigger').on('click', function(){
+     $('#header-menu').toggleClass('expanded');
+  });
+  $('#header-menu a').on('click', function(){
+     $('#header-menu').delay(500).queue(function(next){
+      $(this).toggleClass('expanded');
+      next();
+    });
+  });
+
+
 });
 
