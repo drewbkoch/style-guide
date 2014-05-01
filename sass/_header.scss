@@ -3,6 +3,8 @@ $logo-width-small: em(100);
 
 nav#headz{
    background-image: url(/images/texture3.jpg);
+   border-bottom: 2px solid $orange;
+   border-top: 2px solid $orange;
    img{
       width: $logo-width;
       margin-left: 1.8em;
@@ -21,35 +23,66 @@ nav#headz{
       margin-bottom: .6em;
       color: $brown;
    }
-   div{
-      margin-top: -8em;
-      margin-left: $logo-width + 1;
-   }
    @include media($desktop) {
       a{
          font-size: 2em;
+      }
+      button{
+         display: none;
+      }
+      div{
+         margin-top: -8em;
+         margin-left: $logo-width + 1;
       }
    }
    @include media($tablet) {
       a{
          font-size: 1.7em;
       }
+      .header-menu-trigger{
+         display: none;
+      }
    }
+
    @include media($mobile) {
-      margin-top: 1em;
+      width: 100%;
+      position: relative;
+      background-image: url(/images/texture3.jpg);
       img{
          width: $logo-width-small;
-         margin-left: .3em;
-         padding: 0;
+         margin-left: em(140);
+         display: inline-block;
       }
-      a{
-         font-size: .9em;
-         margin-top: 4em;
+      button.header-trigger{
+         position: absolute;
+         top: 4em;
+         right: 13em;
+         background-color: $salmon;
+         color: white;
+         border: none;
+         width: 6em;
+         font-size: 1em;
       }
       div{
-         margin-top: -8em;
-         margin-left: $logo-width-small + 1;
+         margin-left: none;
+      }
+      .header-menu{
+         height:0;
+         width: 100%;
+         overflow: hidden;
+         margin-top: -em(5);
+         padding-left: em(201);
+         transition: .4s;
+         -webkit-transition: .4s;
+      }
+      .expanded{
+         height: 12em;
+      }
+      a{
+         display: block;
+      }
+      div{
+         width: 100%;
       }
    }
-   border-bottom: 2px solid $orange;
 }
