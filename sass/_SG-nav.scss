@@ -42,4 +42,14 @@ nav.guide-nav{
           display: block;
       }
    }
+   @include media($mobile) {
+      h1 {
+         font-size: 2em;
+         padding-top: 0.5em;
+         padding-bottom: 0.5em;
+      }
+      .mobile-menu-trigger {
+         // top: em(20);
+      }
+   }
 }
