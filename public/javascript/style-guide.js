@@ -22,13 +22,16 @@ $(document).ready(function() {
   scroll("footer");
   scroll("forms");
 
-  $(".expand-jade-code").click(function(){
-    $(this).parent().toggleClass("open");
 
+// $( document ).on( "click", function( event ) {
+//   $( event.target ).closest( "#code" ).toggleClass( "open" );
+// });
+// // </s
+
+  $(".expand-code").click(function(){
+    $(this).siblings().toggleClass("open");
   });
-  $(".expand-sass-code").click(function(){
-    $(this).parent().toggleClass("open");
-  });
+
 
 $('#mobile-menu-trigger').on('click', function(){
    $('#mobile-menu').toggleClass('expanded');

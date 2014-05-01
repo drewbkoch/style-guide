@@ -25,49 +25,51 @@ article(class="forms")
 
 
   section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-scss").
-          form
-            fieldset
-              legend Input fields
-              ul
-                li
-                  label(for="input_small") Small
-                  input(id="input_small" class="input_small" placeholder="I am a placeholder")
-                li
-                  label(for="medium") Medium
-                  input(id="input_medium" class="input_medium" placeholder="I am a placeholder")
-                li
-                  label(for="input_large") Large
-                  input(id="input_large" class="input_large" placeholder="I am a placeholder")
-                li
-                  label(for="input_xlarge") XLarge
-                  input(id="input_xl" class="input_xlarge" placeholder="I am a placeholder")
-                li
-                  label(for="input_full-width") Full Width
-                  input(id="input_full-width" class="input_full-width" placeholder="I am a placeholder")
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          .input_small {
-            width: em(200);
-          }
+    button(class="expand-code") See code
+    div(class="code")
+      div(class="jade-code")
+        h3(class="expand-jade-code") Jade
+        pre
+          code(class="language-scss").
+            form
+              fieldset
+                legend Input fields
+                ul
+                  li
+                    label(for="input_small") Small
+                    input(id="input_small" class="input_small" placeholder="I am a placeholder")
+                  li
+                    label(for="medium") Medium
+                    input(id="input_medium" class="input_medium" placeholder="I am a placeholder")
+                  li
+                    label(for="input_large") Large
+                    input(id="input_large" class="input_large" placeholder="I am a placeholder")
+                  li
+                    label(for="input_xlarge") XLarge
+                    input(id="input_xl" class="input_xlarge" placeholder="I am a placeholder")
+                  li
+                    label(for="input_full-width") Full Width
+                    input(id="input_full-width" class="input_full-width" placeholder="I am a placeholder")
+      div(class="sass-code")
+        h3(class="expand-sass-code") Sass
+        pre
+          code(class="language-scss").
+            .input_small {
+              width: em(200);
+            }
 
-          .input_medium {
-            width: em(300);
-          }
+            .input_medium {
+              width: em(300);
+            }
 
-          .input_large {
-            width: em(400);
-          }
+            .input_large {
+              width: em(400);
+            }
 
-          .input_xlarge {
-            width: em(500);
-          }
+            .input_xlarge {
+              width: em(500);
+            }
 
-          .input_full-width {
-            width: 100%;
-          }
+            .input_full-width {
+              width: 100%;
+            }
