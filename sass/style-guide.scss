@@ -46,39 +46,56 @@ main{
    }
 }
 
-//border between the sections
-article{
-   border-bottom: 2px solid $orange;
+//mobile nav menu-trigger button
+.mobile-menu-trigger{
+   background-color: $salmon;
+   color: white;
+   border: none;
 }
 
-//style the subnav within the style-guide
-// .sub-nav-guide{
-//    @include span-columns(2);
-//    display: block;
-//    padding-left: -2em;
-//    border-right: 2px solid $orange;
-//    a{
-//       font-family: $subhead-font;
-//       font-weight: $subhead-font-weight;
-//       font-size: 1.3em;
-//       color: $salmon;
-//       display: block;
-//    }
-// }
+
+//border between the sections
+article{
+   border-bottom: 2px solid $brown;
+}
+
 
 // To expand the Jade and Sass links to show the blocks of code
 
-.expand-jade-code, .expand-sass-code {
-   cursor:pointer;
+.expand-code {
+   margin-top: em(8);
+   border: 3px solid $green;
+   background-color: #E5DFDA;
+   cursor: pointer;
 }
 
-.jade-code, .sass-code{
+.code{
    overflow:hidden;
-   max-height: 50px;
+   max-height: 20px;
    position:relative;
    -webkit-transition: $expand-transition;
    -moz-transition: $expand-transition;
    transition: $expand-transition;
+}
+.jade-code, .sass-code{
+   @include media($desktop) {
+     width: 48%;
+      display: inline-block;
+      vertical-align: top;
+      margin: em(7);
+   }
+   @include media($tablet) {
+      width: 48%;
+      display: inline-block;
+      vertical-align: top;
+      margin: em(7);
+   }
+   @include media($mobile) {
+      width: 100%;
+      display: block;
+      vertical-align: top;
+      margin: em(7);
+   }
 }
 
 
@@ -86,7 +103,7 @@ article{
    -webkit-transition: $expand-transition;
    -moz-transition: $expand-transition;
    transition: $expand-transition;
-   max-height:1300px;
+   max-height:13000px;
 }
 
 

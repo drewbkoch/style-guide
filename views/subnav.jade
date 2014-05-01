@@ -7,45 +7,47 @@ article
       a(href="#") Slab
       a(href="#") Handwritten
   section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-         nav(class="sub-nav")
-          a(href="#") Sans Serif
-          a(href="#") Serif
-          a(href="#") Script
-          a(href="#") Slab
-          a(href="#") Handwritten
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          nav.sub-nav{
-             margin-top: 8em;
-             margin-left: 1em;
-             a{
-                font-family: $subhead-font;
-                font-weight: $subhead-font-weight;
-                font-size: 1.3em;
-                color: $salmon;
-                display: block;
-             }
-             @include media($desktop) {
-                border-right: 3px solid $orange;
-                width: 30%;
-             }
-             @include media($tablet) {
-                border-right: 3px solid $orange;
-                width: 37%;
-             }
-             @include media($mobile) {
-                border-bottom: 3px solid $orange;
-                margin-top: 2em;
-                a{
-                   display: inline-block;
-                   padding: .4em;
-                   font-size: .9em;
-                }
-             }
-          }
+    button(class="expand-code") See Code
+    div(class="code")
+      div(class="jade-code")
+        h3 Jade
+        pre
+          code(class="language-markup").
+           nav(class="sub-nav")
+            a(href="#") Sans Serif
+            a(href="#") Serif
+            a(href="#") Script
+            a(href="#") Slab
+            a(href="#") Handwritten
+      div(class="sass-code")
+        h3 Sass
+        pre
+          code(class="language-scss").
+            nav.sub-nav{
+               margin-top: 8em;
+               margin-left: 1em;
+               a{
+                  font-family: $subhead-font;
+                  font-weight: $subhead-font-weight;
+                  font-size: 1.3em;
+                  color: $salmon;
+                  display: block;
+               }
+               @include media($desktop) {
+                  border-right: 3px solid $orange;
+                  width: 30%;
+               }
+               @include media($tablet) {
+                  border-right: 3px solid $orange;
+                  width: 37%;
+               }
+               @include media($mobile) {
+                  border-bottom: 3px solid $orange;
+                  margin-top: 2em;
+                  a{
+                     display: inline-block;
+                     padding: .4em;
+                     font-size: .9em;
+                  }
+               }
+            }

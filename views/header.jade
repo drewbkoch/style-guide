@@ -8,72 +8,74 @@ article
          a(href="#") Profile
          a(href="#") Logout
   section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-         nav(class="kernel-nav")
-            img(src="/images/kernelLogo.png" alt="logo")
-            div
-               a(href="#") Home
-               a(href="#") My Fonts
-               a(href="#") Profile
-               a(href="#") Logout
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-         $logo-width: em(160);
-         $logo-width-small: em(100);
+    button(class="expand-code") See Code
+    div(class="code")
+      div(class="jade-code")
+        h3 Jade
+        pre
+          code(class="language-markup").
+           nav(class="kernel-nav")
+              img(src="/images/kernelLogo.png" alt="logo")
+              div
+                 a(href="#") Home
+                 a(href="#") My Fonts
+                 a(href="#") Profile
+                 a(href="#") Logout
+      div(class="sass-code")
+        h3 Sass
+        pre
+          code(class="language-scss").
+           $logo-width: em(160);
+           $logo-width-small: em(100);
 
-         nav#headz{
-           background-image: url(/images/texture3.jpg);
-           img{
-              width: $logo-width;
-              margin-left: 1.8em;
-           }
-           a:hover{
-              color: $magenta;
-           }
-           a:active{
-              color: $salmon;
-           }
-           a{
-              font-family: $header-font;
-              font-weight: $header-font-weight;
-              display: inline-block;
-              margin-left: 1em;
-              margin-bottom: .6em;
-              color: $brown;
-           }
-           div{
-              margin-top: -8em;
-              margin-left: $logo-width + 1;
-           }
-           @include media($desktop) {
-              a{
-                 font-size: 2em;
-              }
-           }
-           @include media($tablet) {
-              a{
-                 font-size: 1.7em;
-              }
-           }
-           @include media($mobile) {
-              margin-top: 1em;
-              img{
-                 width: $logo-width-small;
-                 margin-left: .3em;
-                 padding: 0;
-              }
-              a{
-                 font-size: .9em;
-                 margin-top: 4em;
-              }
-              div{
-                 margin-top: -8em;
-                 margin-left: $logo-width-small + 1;
-              }
-           }
-           border-bottom: 2px solid $orange;}
+           nav#headz{
+             background-image: url(/images/texture3.jpg);
+             img{
+                width: $logo-width;
+                margin-left: 1.8em;
+             }
+             a:hover{
+                color: $magenta;
+             }
+             a:active{
+                color: $salmon;
+             }
+             a{
+                font-family: $header-font;
+                font-weight: $header-font-weight;
+                display: inline-block;
+                margin-left: 1em;
+                margin-bottom: .6em;
+                color: $brown;
+             }
+             div{
+                margin-top: -8em;
+                margin-left: $logo-width + 1;
+             }
+             @include media($desktop) {
+                a{
+                   font-size: 2em;
+                }
+             }
+             @include media($tablet) {
+                a{
+                   font-size: 1.7em;
+                }
+             }
+             @include media($mobile) {
+                margin-top: 1em;
+                img{
+                   width: $logo-width-small;
+                   margin-left: .3em;
+                   padding: 0;
+                }
+                a{
+                   font-size: .9em;
+                   margin-top: 4em;
+                }
+                div{
+                   margin-top: -8em;
+                   margin-left: $logo-width-small + 1;
+                }
+             }
+             border-bottom: 2px solid $orange;}

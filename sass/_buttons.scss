@@ -8,31 +8,31 @@ button {
   font-size: 1em;
 }
 
-.default-buttons > button{
+button.default-buttons{
   @include button;
   background-color: $salmon;
   color: white;
 }
 
-.default-buttons > button:hover{
+button.default-buttons:hover{
    background-color: darken($salmon, 15%);
 }
 
-.secondary-buttons > button{
+button.secondary-buttons{
   @include button;
   background-color: $green;
   color: black;
 }
-.secondary-buttons > button:hover{
+button.secondary-buttons:hover{
    background-color: darken($green, 5%);
 }
 
-.dark-buttons > button{
+button.dark-buttons{
   @include button;
   background-color: $navy;
   color: white;
 }
-.dark-buttons > button:hover{
+button:hover.dark-buttons{
    background-color: lighten($navy, 15%);
 }
 

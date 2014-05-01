@@ -2,121 +2,127 @@ article
   h1(id="buttons") Buttons
   div(class="default-buttons")
     h2 Default Buttons (salmon)
-    button Default Button
-    button(class="more") More Info
-    button(class="like") Like
+    button(class="default-buttons") Default Button
+    button(class="more default-buttons") More Info
+    button(class="like default-buttons") Like
     section(class="expanding")
-      div(class="jade-code")
-        h3(class="expand-jade-code") Jade
-        pre
-          code(class="language-markup").
-            button Default Button
-            button(class="more") More Info
-            button(class="like") Like
-      div(class="sass-code")
-        h3(class="expand-sass-code") Sass
-        pre
-          code(class="language-scss").
-            @mixin button{
-               cursor: pointer;
-               position: relative;
-               border: 0;
-               width: 11em;
-               margin: 1em;
-               padding: 10px 20px;
-               border-radius: 2px;
-            }
-            button{
-              @include button;
-              background-color: $salmon;
-              color: white;
-            }
-            button:hover{
-              background-color: darken($salmon, 15%);
-            }
-            button.more{
-              width: 8.4em;
-            }
-            button.like{
-              width: 6em;
-            }
+      button(class="expand-code") See Code
+      div(class="code")
+        div(class="jade-code")
+          h3 Jade
+          pre(class="closed")
+            code(class="language-markup").
+              button Default Button
+              button(class="more") More Info
+              button(class="like") Like
+        div(class="sass-code")
+          h3 Sass
+          pre(class="closed")
+            code(class="language-scss").
+              @mixin button{
+                 cursor: pointer;
+                 position: relative;
+                 border: 0;
+                 width: 11em;
+                 margin: 1em;
+                 padding: 10px 20px;
+                 border-radius: 2px;
+              }
+              button{
+                @include button;
+                background-color: $salmon;
+                color: white;
+              }
+              button:hover{
+                background-color: darken($salmon, 15%);
+              }
+              button.more{
+                width: 8.4em;
+              }
+              button.like{
+                width: 6em;
+              }
   div(class="secondary-buttons")
     h2 Secondary Buttons (green)
-    button Secondary
-    button(class="more") More Info
-    button(class="like") Like
+    button(class="secondary-buttons") Secondary
+    button(class="more secondary-buttons") More Info
+    button(class="like secondary-buttons") Like
     section(class="expanding")
-      div(class="jade-code")
-        h3(class="expand-jade-code") Jade
-        pre
-          code(class="language-markup").
-            button(class="secondary-button") Secondary
-            button(class="more") More Info
-            button(class="like") Like
-      div(class="sass-code")
-        h3(class="expand-sass-code") Sass
-        pre
-          code(class="language-scss").
-            @mixin button{
-               cursor: pointer;
-               position: relative;
-               border: 0;
-               width: 11em;
-               margin: 1em;
-               padding: 10px 20px;
-               border-radius: 2px;
-            }
-            button.secondary-button{
-              @include button;
-              background-color: $green;
-              color: black;
-            }
-            button.secondary-button:hover{
-              background-color: darken($green, 5%);
-            }
-            button.more{
-              width: 8.4em;
-            }
-            button.like{
-              width: 6em;
-            }
+      button(class="expand-code") See Code
+      div(class="code")
+        div(class="jade-code")
+          h3 Jade
+          pre
+            code(class="language-markup").
+              button(class="secondary-button") Secondary
+              button(class="more") More Info
+              button(class="like") Like
+        div(class="sass-code")
+          h3 Sass
+          pre
+            code(class="language-scss").
+              @mixin button{
+                 cursor: pointer;
+                 position: relative;
+                 border: 0;
+                 width: 11em;
+                 margin: 1em;
+                 padding: 10px 20px;
+                 border-radius: 2px;
+              }
+              button.secondary-button{
+                @include button;
+                background-color: $green;
+                color: black;
+              }
+              button.secondary-button:hover{
+                background-color: darken($green, 5%);
+              }
+              button.more{
+                width: 8.4em;
+              }
+              button.like{
+                width: 6em;
+              }
   div(class="dark-buttons")
     h2 Dark Buttons (navy)
-    button Dark Button
-    button(class="more") More Info
-    button(class="like") Like
-  section(class="expanding")
-    div(class="jade-code")
-      h3(class="expand-jade-code") Jade
-      pre
-        code(class="language-markup").
-          button(class="dark-button") Dark Button
-          button(class="more") More Info
-          button(class="like") Like
-    div(class="sass-code")
-      h3(class="expand-sass-code") Sass
-      pre
-        code(class="language-scss").
-          @mixin button{
-             cursor: pointer;
-             position: relative;
-             border: 0;
-             width: 11em;
-             margin: 1em;
-             padding: 10px 20px;
-             border-radius: 2px;
-          }
-          button.navy-button{
-            @include button;
-            background-color: $navy;
-            color: white;
-          }
-          button.navy-button:hover{
-            background-color: darken($navy, 15%);
-          }
-          button.more{
-            width: 8.4em;
-          }
-          button.like{
-            width: 6em;
-          }
+    button(class="dark-buttons") Dark Button
+    button(class="more dark-buttons") More Info
+    button(class="like dark-buttons") Like
+    section(class="expanding")
+      button(class="expand-code") See Code
+      div(class="code")
+        div(class="jade-code")
+          h3 Jade
+          pre
+            code(class="language-markup").
+              button(class="dark-button") Dark Button
+              button(class="more") More Info
+              button(class="like") Like
+        div(class="sass-code")
+          h3 Sass
+          pre
+            code(class="language-scss").
+              @mixin button{
+                 cursor: pointer;
+                 position: relative;
+                 border: 0;
+                 width: 11em;
+                 margin: 1em;
+                 padding: 10px 20px;
+                 border-radius: 2px;
+              }
+              button.navy-button{
+                @include button;
+                background-color: $navy;
+                color: white;
+              }
+              button.navy-button:hover{
+                background-color: darken($navy, 15%);
+              }
+              button.more{
+                width: 8.4em;
+              }
+              button.like{
+                width: 6em;
+              }
