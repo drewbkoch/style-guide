@@ -3,6 +3,7 @@
 @import "neat";
 @import "colors";
 @import "typography";
+@import "buttons";
 @import "breakpoints";
 @import "SG-nav";
 
@@ -11,11 +12,14 @@ $expand-transition: all 0.5s;
 
 //grid layout- responsive web design for the style guide
 #use{
-   @include media($mobile) {
-      margin-top: 5.1em;
+   @include media($not-desktop) {
+      margin-top: 2.1em;
    }
 }
 
+body {
+   margin: 0;
+}
 
 main{
    @include media($desktop) {

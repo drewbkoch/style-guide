@@ -30,9 +30,15 @@ $(document).ready(function() {
     $(this).parent().toggleClass("open");
   });
 
-$('#mobile-menu-trigger').on('click', function(){
-   $('#mobile-menu').toggleClass('expanded');
-});
+  $('#mobile-menu-trigger').on('click', function(){
+     $('#mobile-menu').toggleClass('expanded');
+  });
+  $('#mobile-menu a').on('click', function(){
+     $('#mobile-menu').delay(500).queue(function(next){
+      $(this).toggleClass('expanded');
+      next();
+    });
+  });
 
 });
 
