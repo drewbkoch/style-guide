@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "express": "~4.0.0",
@@ -18,5 +18,10 @@
   },
   "devDependencies": {
     "grunt-contrib-watch": "^0.6.1"
+  },
+  "main": "app.js",
+  "engines": {
+    "node": "0.10.26",
+    "npm": "1.4.3"
   }
 }
